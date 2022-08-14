@@ -1,0 +1,30 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #2f1854;
+    color: aliceblue;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+
+    .waves-container {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.wave {
+    animation: waveAnimation 5s infinite alternate-reverse;
+}
+
+@keyframes waveAnimation {
+    from {
+        transform: translate(0, -20px);
+    }
+    to {
+        transform: translate(0, 20px);
+    }
+}
